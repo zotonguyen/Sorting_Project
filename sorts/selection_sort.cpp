@@ -14,6 +14,11 @@ void selection_sort(int a[], int n,long long &comparison){
 }
 void selection_sort(int a[], int n){
     
-    long long comparsion;
-    selection_sort(a,n,comparsion);
+    for(int i = 0 ;i<n-1;i++){
+        int minIndex = i;
+        for(int j = i+1;j<n;j++){
+            if(a[minIndex] > a[j]) minIndex = j;
+        }
+        swap(a[minIndex],a[i]);
+    }
 }
