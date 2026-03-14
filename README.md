@@ -7,4 +7,5 @@ add file trong file sort sau đó commit lên để tui duyệt vào . Không bi
 
 
 How to compile : g++ (Get-ChildItem *.cpp) -std=c++14 -o groupid.exe 
+
 run command for example :  .\groupid.exe -a heap-sort 50000 -comp
