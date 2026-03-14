@@ -3,6 +3,7 @@ using namespace std;
 #include "quick_sort.h"
 
 int Partition( int a[], int first, int last) {
+    swap (a[first], a[(first + last) / 2]);
     int pivot = a[first];
     int lastS1 = first;
     int firstUnknow = first + 1;
@@ -30,6 +31,7 @@ void quick_sort (int a[], int first, int last) {
 }
 
 int Partition( int a[], int first, int last, long long& comparison) {
+    swap (a[first], a[(first + last) / 2]);
     int pivot = a[first];
     int lastS1 = first;
     int firstUnknow = first + 1;
@@ -55,5 +57,8 @@ void quick_sort (int a[], int first, int last, long long& comparison) {
     quick_sort (a, first, pivotIndex - 1, comparison);
     quick_sort (a, pivotIndex + 1, last, comparison);
 }
+
+
+
 
 
