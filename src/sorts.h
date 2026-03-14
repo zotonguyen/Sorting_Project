@@ -10,3 +10,4 @@
 #include"heap_sort.h"
 #include"shakerSort.h"
 #include"binaryInsertionSort.h"
+#include"counting_sort.h"
