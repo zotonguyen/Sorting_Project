@@ -3,8 +3,8 @@
 #include <fstream>
 #include <chrono>
 using namespace std;
-long long comp;
-double running_time;
+long long comp=0;
+double running_time=0;
 double benchmark(int algorithmIndex, int a[], int n)
 {
     auto start = chrono::high_resolution_clock::now();
@@ -232,7 +232,7 @@ static void RunC5(const Command &command)
     cout << "--------------------------------------------------------" << endl;
     int n = command.inputsize;
     double running_time2=0;
-    long long comp2;
+    long long comp2 = 0;
     int *a = new int[n];
     int *b = new int[n];
     int Datatype = GetGenerateData(command.inputOrder);
